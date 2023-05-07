@@ -22,7 +22,7 @@ import LifecycleB from './LifecycleB'
    return  (
    <div>
    //    <div>LifecycleA</div>
-   {/* //    <LifecycleB/> */}
+   //    <LifecycleB/>
    //    </div>
       //  <div>LifecycleA</div>
     ) 
