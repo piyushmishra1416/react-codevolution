@@ -15,7 +15,7 @@ export class FRParentInput extends Component {
     return (
       <div>
          <FRInput ref= {this.inputRef}/>
-         <button onClick={this.clickHandler}> Focus Input </button>
+         <button onClick={this.clickHandler}> Focus Input </button> 
       </div>
     )
   }
