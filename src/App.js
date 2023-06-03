@@ -20,6 +20,8 @@ import ClickCountertwo from "./components/ClickCountertwo";
 import HoverCountertwo from "./components/HoverCountertwo";
 import User from "./components/User";
 import Counter from "./components/Counter";
+import ComponentC from "./components/ComponentC";
+import { UserProvider } from './components/userContext'
 
 function App() {
   return (
@@ -49,7 +51,7 @@ function App() {
        <HoverCountertwo />
        <User render = {(isLoggedIn) => isLoggedIn ? "Vishwas" : 'Guest'} /> */}
 
-      <Counter
+      {/* <Counter
         render={(count, incrementCount) => (
           <ClickCountertwo count={count} incrementCount={incrementCount} />
         )}
@@ -58,7 +60,10 @@ function App() {
         render={(count, incrementCount) => (
           <HoverCountertwo count={count} incrementCount={incrementCount} />
         )}
-      />
+      /> */}
+      <UserProvider value="Vishwas">
+        <ComponentC />
+      </UserProvider>
     </>
   );
 }
