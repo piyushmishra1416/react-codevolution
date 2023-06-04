@@ -22,6 +22,8 @@ import User from "./components/User";
 import Counter from "./components/Counter";
 import ComponentC from "./components/ComponentC";
 import { UserProvider } from './components/userContext'
+import PostList from "./components/PostList";
+import PostForm from "./components/PostForm";
 
 function App() {
   return (
@@ -61,9 +63,11 @@ function App() {
           <HoverCountertwo count={count} incrementCount={incrementCount} />
         )}
       /> */}
-      <UserProvider value="Vishwas">
+      {/* <UserProvider value="Vishwas">
         <ComponentC />
-      </UserProvider>
+      </UserProvider> */}
+      {/* <PostList /> */}
+      <PostForm />
     </>
   );
 }
